@@ -1,0 +1,217 @@
+# Histogram
+par(mfrow=c(2,2))
+hist(iris$Petal.Length, main="Petal Length", col="blue1", breaks=20, border = "pink")
+hist(iris$Petal.Width, main="Petal Width", col="blue1", breaks=4, border = "pink")
+hist(iris$Sepal.Length, main="Sepal Length", col="blue1", breaks=3, border = "pink")
+hist(iris$Sepal.Width, main="Sepal Width", col="blue1", breaks=10, border = "pink")
+#ECDF
+require(graphics)
+Fn <- ecdf(iris$Petal.Length)
+plot(Fn, col="blue")
+ECDF
+require(graphics)
+FnPL<- ecdf(iris$Petal.Length)
+FnSW <- ecdf(iris$Sepal.Width)
+plot(FnPL, col="blue")
+par(new = TRUE)
+plot(FnSW, col="red")
+#ECDF
+require(graphics)
+FnPL<- ecdf(iris$Petal.Length)
+FnSW <- ecdf(iris$Sepal.Width)
+plot(FnPL, col="blue",  main='ecdf')
+par(new = TRUE)
+plot(FnSW, col="red")
+data(iris)
+mytable <- table(iris$Species)
+# paste(multiple R objects, sep=" ") so we put the name and the number
+print(mytable)
+lbls <- paste(names(mytable), "\n", 50, sep="")
+pie(mytable, labels = lbls,
+main="Pie Chart of Species\n (with sample sizes)")
+# Histogram
+par(mfrow=c(2,2))
+hist(iris$Petal.Length, main="Petal Length", col="blue1", breaks=20, border = "pink")
+hist(iris$Petal.Width, main="Petal Width", col="blue1", breaks=4, border = "pink")
+hist(iris$Sepal.Length, main="Sepal Length", col="blue1", breaks=3, border = "pink")
+hist(iris$Sepal.Width, main="Sepal Width", col="blue1", breaks=10, border = "pink")
+#ECDF
+require(graphics)
+FnPL<- ecdf(iris$Petal.Length)
+FnSW <- ecdf(iris$Sepal.Width)
+plot(FnPL, col="blue",  main='ecdf1', panel.first =grid())
+par(new = TRUE)
+plot(FnSW, col="red",  main='ecdf2', panel.first =grid())
+data(iris)
+mytable <- table(iris$Species)
+# paste(multiple R objects, sep=" ") so we put the name and the number
+print(mytable)
+lbls <- paste(names(mytable), "\n", 50, sep="")
+pie(mytable, labels = lbls,
+main="Pie Chart of Species\n (with sample sizes)")
+# Histogram
+par(mfrow=c(2,2))
+hist(iris$Petal.Length, main="Petal Length", col="blue1", breaks=20, border = "pink")
+hist(iris$Petal.Width, main="Petal Width", col="blue1", breaks=4, border = "pink")
+hist(iris$Sepal.Length, main="Sepal Length", col="blue1", breaks=3, border = "pink")
+hist(iris$Sepal.Width, main="Sepal Width", col="blue1", breaks=10, border = "pink")
+#ECDF
+require(graphics)
+par(mfrow=c(2,1))
+FnPL<- ecdf(iris$Petal.Length)
+FnSW <- ecdf(iris$Sepal.Width)
+plot(FnPL, col="blue",  main='ecdf1', panel.first =grid())
+par(new = TRUE)
+plot(FnSW, col="red",  main='ecdf2', panel.first =grid())
+data(iris)
+mytable <- table(iris$Species)
+# paste(multiple R objects, sep=" ") so we put the name and the number
+print(mytable)
+lbls <- paste(names(mytable), "\n", 50, sep="")
+pie(mytable, labels = lbls,
+main="Pie Chart of Species\n (with sample sizes)")
+# Histogram
+par(mfrow=c(2,2))
+hist(iris$Petal.Length, main="Petal Length", col="blue1", breaks=20, border = "pink")
+hist(iris$Petal.Width, main="Petal Width", col="blue1", breaks=4, border = "pink")
+hist(iris$Sepal.Length, main="Sepal Length", col="blue1", breaks=3, border = "pink")
+hist(iris$Sepal.Width, main="Sepal Width", col="blue1", breaks=10, border = "pink")
+#ECDF
+require(graphics)
+par(mfrow=c(2,1))
+FnPL<- ecdf(iris$Petal.Length)
+FnSW <- ecdf(iris$Sepal.Width)
+plot(FnPL, col="blue",  main='ecdf1', panel.first =grid())
+plot(FnSW, col="red",  main='ecdf2', panel.first =grid())
+install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
+IRkernel::installspec()
+q
+quit
+q()
+install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
+IRkernel::installspec()
+q()
+install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
+IRkernel::installspec()
+install.packages('IRkernel', type = 'source')
+install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
+q()
+pwd
+source('~/courses/valorisationDD/labs/lab 9/lab9.R')
+source('~/courses/valorisationDD/labs/lab 9/lab9.R')
+source('~/courses/valorisationDD/labs/lab 9/lab9.R')
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+print(student)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+setwd("~/courses/valorisationDD/labs/lab 9")
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+print(student)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+print(students)
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+r_sum = rowSums(students)
+c_sum = colSums(students)
+#students$total = r_sum
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+r_sum = rowSums(students)
+c_sum = data.frame(colSums(students))
+names(c_sum) = c("Law", "Sciences", "Medecine", "AssociateDegree")
+students$total = r_sum
+students = rbind(df)
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+r_sum = rowSums(students)
+c_sum = data.frame(colSums(students))
+names(c_sum) = c("Law", "Sciences", "Medecine", "AssociateDegree")
+students$total = r_sum
+students = rbind(students, c_sum)
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+c_sum = data.frame(colSums(students))
+names(c_sum) = c("Law", "Sciences", "Medecine", "AssociateDegree")
+students = rbind(students, c_sum)
+r_sum = rowSums(students)
+students$total = r_sum
+View(students)
+View(c_sum)
+View(c_sum)
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+c_sum = colSums(students)
+students = rbind(students, "total", c_sum)
+r_sum = rowSums(students)
+students$total = r_sum
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+c_sum = colSums(students)
+students = rbind(students, "total" = c_sum)
+r_sum = rowSums(students)
+students$total = r_sum
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+c_sum = colSums(students)
+students = rbind(students, "total" = c_sum)
+r_sum = rowSums(students)
+students$total = r_sum
+students <- prop.table(students)
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+c_sum = colSums(students)
+students = rbind(students, "total" = c_sum)
+r_sum = rowSums(students)
+students$total = r_sum
+students <- prop.table(students)*100
+View(students)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+students_2 = students
+c_sum = colSums(students)
+students = rbind(students_2, "total" = c_sum)
+r_sum = rowSums(students)
+students_2$total = r_sum
+students <- prop.table(students)*100
+View(students)
+View(students_2)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+students_2 = students
+c_sum = colSums(students_2)
+students_2 = rbind(students_2, "total" = c_sum)
+r_sum = rowSums(students_2)
+students_2$total = r_sum
+students <- prop.table(students)*100
+View(students)
+View(students)
+View(students_2)
+View(students_2)
+View(students)
+View(students_2)
+students <- read.table(file= "studentStudy.txt",
+row.names=1, header=T, sep="\t")
+students_2 = students
+c_sum = colSums(students_2)
+students_2 = rbind(students_2, "total" = c_sum)
+r_sum = rowSums(students_2)
+students_2$total = r_sum
+#contengency table
+cont_table <- prop.table(students)*100
+c_sum = colSums(cont_table)
+cont_table = rbind(cont_table, "total" = c_sum)
+r_sum = rowSums(cont_table)
+cont_table$total = r_sum
+View(cont_table)

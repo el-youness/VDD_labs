@@ -1,0 +1,6 @@
+Socio/Study	Law	Sciences	Medecine	AssociateDegree
+Farmer	80	99	65	58
+BussinessLeader	168	137	208	62
+SeniorManager	470	400	876	79
+Employee	145	133	135	54
+Laborer	166	193	127	129
